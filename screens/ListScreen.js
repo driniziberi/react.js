@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, FlatList, StyleSheet } from "react-native";
+import { Text, View, FlatList, StyleSheet , Button } from "react-native";
 
 const students = [
   { name: 'Drin', lastname: 'ziberi', age: '15' },
@@ -7,7 +7,7 @@ const students = [
   { name: 'Erlis', lastname: 'speci', age: '67' }
 ];
 
-const ListScreen = () => {
+const ListScreen = (Props) => {
   return (
     <View>
       <Text style={styles.textStyle}>List Screen</Text>
@@ -19,6 +19,11 @@ const ListScreen = () => {
           return <Text>{item.name} {item.lastname}-{item.age}</Text>;
         }}
       />
+
+      <Button
+      title="Go back"
+      onPress={() => Props.navigation.goBack()}
+      ></Button>
     </View>
   );
 };
