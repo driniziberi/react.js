@@ -1,8 +1,8 @@
-import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import React from 'react';
+import { Text, StyleSheet, View } from 'react-native';
 
 const ExerciseScreen = () => {
-  const message = "Hello World";
+  const message = 'Hello World';
 
   return (
     <View style={styles.container}>
@@ -14,14 +14,14 @@ const ExerciseScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f5f5f5",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
   },
   text: {
     fontSize: 24,
-    fontWeight: "bold",
-    color: "#333",
+    fontWeight: 'bold',
+    color: '#333',
   },
 });
 
